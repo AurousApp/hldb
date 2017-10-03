@@ -29,22 +29,7 @@ if (date.getMonth() == "11") {
 }
 
 
-$(function() {
-  var $main = $(".container"),
-      
-      init = function() {
-        // Do this when a page loads.
-      };
-  
 
-  $(document).on("click", ".nav-link a", function() {
-    var href = $(this).attr("href");
-
-    history.pushState({}, '', href);
-    $main.load(href + " .container");
-    return false;
-  });
-});
 /*
 $(".container").load("#p1");
 window.history.pushState(data, '', $(this).attr("href"));
