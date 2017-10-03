@@ -1,0 +1,15 @@
+.bg-primary{
+    background-color: orangered !important;
+}
+nav.navbar{
+    background-image: url(Branch_with_Autumn_Leaves_PNG_Clipart.png);
+    background-repeat: no-repeat;
+    background-size: 200px 100px;
+    background-position: left top;
+}
+nav a{
+    color: white !important;
+}
+a{
+    color: orangered !important;
+}

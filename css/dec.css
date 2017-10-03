@@ -1,0 +1,15 @@
+.bg-primary{
+    background-color: #09A8FA !important;
+}
+nav.navbar{
+    background-image: url(1238237.png);
+    background-repeat: no-repeat;
+    background-size: 200px 100px;
+    background-position: -32px -10px;
+}
+nav a{
+    color: white !important;
+}
+a{
+    color: #09A8FA !important;
+}
