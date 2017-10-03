@@ -1,0 +1,153 @@
+<!doctype html>
+
+<html>
+
+<head>
+    <title>YouTube(dot)com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-title" content="AppTitle">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+
+    <style>
+        body {
+            margin: 0px;
+            height: 100vh;
+        }
+        
+        * {
+            -webkit-transition: all 1s ease-in-out;
+            margin: 0px;
+        }
+        
+        video {
+            width: 100%;
+            max-height: 400px;
+            background-color: black;
+        }
+        
+        body.mobile video {
+            width: 100%;
+            height: 100%;
+        }
+        
+        @media screen and (orientation:portrait) {
+            body.mobile .container {
+                background-color: black;
+                width: 100%;
+                padding-top: 56.25%;
+                /* 1:1 Aspect Ratio */
+                position: relative;
+                /* If you want text inside of it */
+            }
+            /* If you want text inside of the container */
+            body.mobile .text {
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+            }
+        }
+        
+        @media screen and (orientation:landscape) {
+            body.mobile .container {
+                background-color: black;
+                width: 100%;
+                padding-top: 0%;
+                height: 100vh;
+                /* 1:1 Aspect Ratio */
+                position: fixed;
+                /* If you want text inside of it */
+            }
+            /* If you want text inside of the container */
+        }
+        
+        #page {
+            height: 100%;
+            width: 100%
+        }
+        
+        #tdcontent {
+            height: 100%;
+        }
+        
+        #content {
+            overflow: auto;
+            /* or overflow: hidden; */
+            height: 100%;
+        }
+        table, *{
+                border-spacing: 0px;
+        }
+
+    </style>
+</head>
+
+<body class="">
+
+    <div></div>
+    <table id="page">
+        <tr>
+            <td id="tdheader">
+                <div id="header">
+                    <div class="container">
+                        <div class="text"><video poster="http://via.placeholder.com/1280x720/000000/878787/?text=BrenLive+Is+Offline+:(" playsinline controls autoplay id="video" src="https://lh3.googleusercontent.com/VmkEUaLSoPovFBIw6U-UoCAGxfQI8CkmdhXzcXM-nPtEts8Fv1aG7I62sFvyIpemMq9U9Cw4EFrNXImcULDsj336OR0Ux3-vTicL8kiMdc_sUmN-ozhAxNcsc4pimh9TE7HeZn94yPl4K0bRjzSCx-NbW6xumQno3lsEWD0bbwAvKBay1bPOCEL52eev43A-_MwhCfcyos_9q551edBbRbDbwq7vmfcRjySpMVOCERt1NVmOxg7lqpvj-uH6T4NgyWJt-K3T4j7VahgvBuhiUIjL72w-832JnDEByaWjTVvAl8hjDwBw5Ld0n-dnc9PPR25XDGta2wdxizkf5SQMGCAcET_HrWNpXn1rI_JFZprG5bper7HMFAcfl81fEAVujp9FBT5vrCr6cWaMgZeqipTtVzuDTetEf3UtPpdfA6cnk4u6lUOeEfqk7W1dlFOYB9ofqm4DWyd4BrjxvmUWug9TMLQjGaIi4m9iPavU7i1_MAescTs_ZeKvVDo22jSpT43K26V01qAGbDdJNfkFgAajWHp8PJNQmqRT7PedzrbYVDy5YnlIdTVTqCVT2D_IYD1hlKfU099D90Gc-T_6lNT69JrYhrqYcJUrzXcoAg=m15?cpn=j-Y4l-qPCFih3wWw&c=WEB&cver=1.20170927"></video></div>
+                        <!-- If you want text inside the container -->
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td id="tdcontent">
+                <div id="content">
+                    <div id="tlkio" data-channel="bren00x" data-custom-css="chat.css" style="width:100%;height:100%;"></div>
+                    <script async src="http://tlk.io/embed.js" type="text/javascript"></script>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://video-dev.github.io/hls.js/dist/hls.min.js"></script>
+    <script>
+        /*
+                var iDevices = [
+                    'iPad Simulator',
+                    'iPhone Simulator',
+                    'iPod Simulator',
+                    'iPad',
+                    'iPhone',
+                    'iPod'
+                ];
+                $(function() {
+                    $("video").prop('muted', false);
+                });
+                var url = "http://wms.shared.streamshow.it/carinatv/carinatv/playlist.m3u8";
+                if (navigator.platform === iDevices.pop()) {
+                    var video = document.getElementById('video');
+                    video.src = url;
+                } else {
+                    if (Hls.isSupported()) {
+                        var video = document.getElementById('video');
+                        var hls = new Hls();
+                        hls.loadSource(url);
+                        hls.attachMedia(video);
+                        hls.on(Hls.Events.MANIFEST_PARSED, function() {
+                            video.play();
+                        });
+                    }
+
+
+                }
+                if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                    $("body").addClass("mobile");
+                }
+        */
+
+    </script>
+</body>
+
+</html>
