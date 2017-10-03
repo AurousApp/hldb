@@ -29,8 +29,3 @@ if (date.getMonth() == "11") {
 }
 
 
-
-/*
-$(".container").load("#p1");
-window.history.pushState(data, '', $(this).attr("href"));
-return false;
